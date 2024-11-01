@@ -1,0 +1,27 @@
+.button-primary {
+  font-family: $secondary-font;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $white;
+  background-color: $base-green;
+  border: none;
+
+  &:hover,
+  &:focus {
+    background-color: $base-green-2;
+    outline: none;
+    cursor: pointer;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $base-green-2;
+  }
+
+  &:disabled {
+    opacity: 30%;
+    pointer-events: none;
+  }
+}

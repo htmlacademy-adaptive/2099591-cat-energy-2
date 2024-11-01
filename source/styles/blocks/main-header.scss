@@ -1,0 +1,110 @@
+.main-header {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  place-items: center center;
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 30px 10px;
+  }
+
+  @media (min-width: $desktop-full-width) {
+    position: absolute;
+    top: 55px;
+    left: 7.6%;
+    width: 100%;
+    max-width: 1024px;
+    height: 59px;
+    padding: 0;
+    z-index: 5;
+  }
+
+  @media (min-width: 1700px) {
+    left: 15%;
+  }
+
+  @media (min-width: 2000px) {
+    left: 25%;
+  }
+
+  @media (min-width: $desktop-full-width) {
+    max-width: 1220px;
+  }
+}
+
+.main-header__logo {
+  height: 65px;
+  padding: 13px 20px 15px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-right: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 59px;
+    padding: 0;
+  }
+}
+
+.main-header__logo--text {
+  display: block;
+  align-content: center;
+  padding: 13px 24px 13px 16px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 118px;
+    height: 59px;
+    margin-left: 14px;
+    padding-bottom: 0;
+  }
+}
+
+.main-header--inner {
+  position: static;
+  margin-bottom: 27px;
+  border-bottom: 1px solid $special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+    color: $black;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 100%;
+    margin: 0 auto;
+    padding: 55px 110px 74px;
+    max-width: 1440px;
+  }
+}
+
+.main-header--inner .main-header__logo--text {
+  padding-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 13px;
+    padding-top: 4px;
+  }
+}
